@@ -17,3 +17,14 @@ ENV PATH="$PATH:/letsencrypt/hooks"
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 VOLUME ["/etc/letsencrypt","/var/lib/letsencrypt","/var/log/letsencrypt"]
+
+ARG BUILD_DATE
+ARG VCS_REF
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.docker.dockerfile="/Dockerfile" \
+      org.label-schema.license="MIT" \
+      org.label-schema.name="letsencrypt-dns" \
+      org.label-schema.url="https://github.com/solidnerd/letsencrypt-dns" \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/solidnerd/letsencrypt-dns.git" \
+      org.label-schema.vcs-type="Git"
