@@ -1,9 +1,11 @@
 Let's Encrypt DNS Challenge
 ===========================
 
+[![](https://images.microbadger.com/badges/image/solidnerd/letsencrypt-dns.svg)](https://microbadger.com/images/solidnerd/letsencrypt-dns "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/solidnerd/letsencrypt-dns.svg)](https://microbadger.com/images/solidnerd/letsencrypt-dns "Get your own commit badge on microbadger.com") [![](https://images.microbadger.com/badges/version/solidnerd/letsencrypt-dns.svg)](https://microbadger.com/images/solidnerd/letsencrypt-dns "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/license/solidnerd/letsencrypt-dns.svg)](https://microbadger.com/images/solidnerd/letsencrypt-dns "Get your own license badge on microbadger.com")
+
 ## Why ?
 
-# New Image / Container
+### New Image / Container
 Generally you start your letsencrpyt container and make an authentication challenge over http. 
 
 The problem here is that the http authentication requires both standard ports from http (80/tcp) and https(443/tcp).
